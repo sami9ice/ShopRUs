@@ -40,8 +40,8 @@ namespace ShopRUsApi.Test
             Assert.AreEqual(2, apiResponse.Data.Count);
         }
 
-        [TestCase("Victor")]
-        [TestCase("Daniel")]
+        [TestCase("Samuel")]
+        [TestCase("Prince")]
         public void GetCustomerByNameTest_ReturnsCustomer(string name)
         {
             
@@ -67,7 +67,7 @@ namespace ShopRUsApi.Test
             customerList.Add(new Customer
             {
                 Id = 1,
-                CustomerName = "Victor",
+                CustomerName = "Samuel",
                 Role = "Affiliate",
                 CreatedDate = DateTime.Now
             });
@@ -75,7 +75,7 @@ namespace ShopRUsApi.Test
             customerList.Add(new Customer
             {
                 Id = 2,
-                CustomerName = "Daniel",
+                CustomerName = "Prince",
                 Role = "Employee",
                 CreatedDate = DateTime.Now
             });
